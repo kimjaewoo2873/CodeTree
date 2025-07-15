@@ -22,7 +22,7 @@ public class Main {
                 System.out.println(B);
             }
             else if(B <= C && B >= A) {
-                System.out.println(A);
+                System.out.println(B);
             }
             else if(C <= A && C >= B) {
                 System.out.println(C);
