@@ -3,7 +3,7 @@ public class Main {
     public static void main(String[] args) {
         // Please write your code here.
         Scanner sc = new Scanner(System.in);
-        String [] str = {"apple","banana","blueberry","orange"};
+        String [] str = {"apple","banana","grape","blueberry","orange"};
         char spell = sc.next().charAt(0);
         int cnt = 0;
         for(int i=0;i<str.length;i++) {
