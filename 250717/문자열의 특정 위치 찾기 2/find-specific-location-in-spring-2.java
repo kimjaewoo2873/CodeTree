@@ -7,7 +7,7 @@ public class Main {
         char spell = sc.next().charAt(0);
         int cnt = 0;
         for(int i=0;i<str.length;i++) {
-            if(str[i].indexOf(spell) != -1) {
+            if(str[i].charAt(2) == spell || str[i].charAt(3) == spell) {
                 System.out.println(str[i]);
                 cnt++;
             }
