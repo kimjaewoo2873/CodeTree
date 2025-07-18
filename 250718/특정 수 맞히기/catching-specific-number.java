@@ -7,9 +7,9 @@ public class Main {
         int input = 0;
         while(true) { 
             input = sc.nextInt();
-            if(input > goal) {
+            if(input < goal) {
                 System.out.println("Higher");    
-            } else if (input < goal) {
+            } else if (input > goal) {
                 System.out.println("Lower");
             } else {
                 System.out.println("Good");
