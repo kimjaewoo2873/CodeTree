@@ -8,6 +8,7 @@ public class Main {
         int cnt = 0;
         int floor = 0;
         for(int i=1;i<=N;i++) { 
+            floor = 0;
             for(int j=0;;j++) {
                 cnt++;
                 System.out.print(cnt + " ");
