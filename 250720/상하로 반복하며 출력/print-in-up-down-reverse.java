@@ -14,7 +14,11 @@ public class Main {
                 cnt = 1;
             }
             for(int j=0;j<arr.length;j++){
-                arr[j][i] = cnt++; 
+                if(i % 2 == 1){
+                    arr[j][i] == cnt--;
+                } else {
+                     arr[j][i] = cnt++;   
+                }
             }
         }
         for(int i=0;i<arr.length;i++){
