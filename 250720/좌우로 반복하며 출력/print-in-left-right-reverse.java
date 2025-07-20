@@ -1,23 +1,21 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        int[][] arr = new int[4][4];
+        Scanner sc = new Scanner(System.in);
 
-        for (int i = 0; i < 4; i++) {
-            if (i % 2 == 0) { // 짝수 행: 1 2 3 4
-                for (int j = 0; j < 4; j++) {
-                    arr[i][j] = j + 1;
-                }
-            } else { // 홀수 행: 4 3 2 1
-                for (int j = 0; j < 4; j++) {
-                    arr[i][j] = 4 - j;
-                }
-            }
-        }
+        // 변수 선언 및 입력
+        int n = sc.nextInt();
 
-        // 출력
-        for (int i = 0; i < 4; i++) {
-            for (int j = 0; j < 4; j++) {
-                System.out.print(arr[i][j]);
+        // cnt를 이용해 n칸의 정사각형에 올바른 숫자를 출력합니다.
+        for(int i = 0; i < n; i++) {
+            for(int j = 0; j < n; j++) {
+                if(i % 2 == 0) {
+                    System.out.print(j + 1);
+                }
+                else {
+                    System.out.print(n - j);
+                }
             }
             System.out.println();
         }
