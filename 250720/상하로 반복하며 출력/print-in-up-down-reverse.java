@@ -9,7 +9,7 @@ public class Main {
         int arr[][] = new int[n][n];
         for(int i=0;i<arr.length;i++){
             if(i % 2 == 1){
-                cnt = 4;
+                cnt = n;
             } else {
                 cnt = 1;
             }
