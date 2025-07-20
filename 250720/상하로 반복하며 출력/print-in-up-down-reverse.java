@@ -15,7 +15,7 @@ public class Main {
             }
             for(int j=0;j<arr.length;j++){
                 if(i % 2 == 1){
-                    arr[j][i] == cnt--;
+                    arr[j][i] = cnt--;
                 } else {
                      arr[j][i] = cnt++;   
                 }
