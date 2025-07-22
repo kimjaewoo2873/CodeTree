@@ -3,5 +3,6 @@ public class Main {
         // Please write your code here.
         int a = 7;
         a = 4;
+        System.out.print(a);
     }
 }
