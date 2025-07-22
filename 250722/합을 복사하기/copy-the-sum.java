@@ -4,9 +4,10 @@ public class Main {
         int a = 1;
         int b = 2;
         int c = 3;
-        a = a + b + c;
-        b = a + b + c;
-        c = a + b + c;
+        int sum = a + b + c;
+        a = sum;
+        b = sum;
+        c = sum;
         System.out.println(a+ " " + b + " " + c);
     }
 }
