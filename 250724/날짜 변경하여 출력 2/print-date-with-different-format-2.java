@@ -4,7 +4,7 @@ public class Main {
         // Please write your code here.
         Scanner sc = new Scanner(System.in);
         String str = sc.next();
-        StringBuffer sb = new StringBuffer(str, "-");
+        String parts[] = str.split("-");
         int mm = Integer.parseInt(sb[0]);
         int dd = Integer.parseInt(sb[1]);
         int yy = Integer.parseInt(sb[2]);
