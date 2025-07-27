@@ -5,10 +5,10 @@ public class Main {
         int maxSize = n * m;
         int narr[] = new int[maxSize/n];
         int marr[] = new int[maxSize/m];
-        for(int i=1;i<narr.length;i++){
+        for(int i=1;i<=narr.length;i++){
             narr[i - 1] = n * i;
         }
-        for(int i=1;i<marr.length;i++){
+        for(int i=1;i<=marr.length;i++){
             marr[i - 1] = m * i;
         }
         for(int i=0;i<narr.length;i++){
