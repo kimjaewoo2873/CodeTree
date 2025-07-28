@@ -5,6 +5,8 @@ public class Main {
         int sec = 0;
         int fir = 0;
         for(int i=a; i<=b;i++) {
+            if(i % 10 == 0)
+                continue;
             sec = i % 10;
             fir = i / 10;
             if(i % 3 == 0 || sec % 3 == 0 || fir % 3 ==0) {
