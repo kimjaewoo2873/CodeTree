@@ -2,16 +2,10 @@ import java.util.Scanner;
 public class Main {
     public static int findThirdMultiple(int a, int b) {
         int cnt = 0;
-        int sec = 0;
-        int fir = 0;
-        for(int i=a; i<=b;i++) {
-            sec = i % 10;
-            fir = i / 10;
-             if(i % 10 == 0 && fir % 3 != 0)
-                continue;
-            if(i % 3 == 0 || sec % 3 == 0 || fir % 3 ==0) {
+        for(int i=a;i<=b;i++) {
+            String num = String.valueOf(i);
+            if(i % 3 == 0 || num.contains("3") || num.contains("6") || num.contains("9"))
                 cnt++;
-            }
         }
         return cnt;
     }
