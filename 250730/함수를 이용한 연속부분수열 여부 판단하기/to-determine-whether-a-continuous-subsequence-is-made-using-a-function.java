@@ -1,18 +1,17 @@
 import java.util.Scanner;
 public class Main {
     public static void fun(int a[], int b[]) {
-        boolean flag = false;
-        for(int i=0;i<a.length;i++) {
+        boolean flag = true;
+        for(int i=0;i<=a.length - b.length;i++) {
+            flag = true;
             for(int j=0;j<b.length;j++) {
-                if(a[i] == b[j]) {
-                    int eq = i;
-                    for(int k=j + 1; k<b.length; k++) {
-                        if(a[++eq] != b[k]) {
-                            break;
-                        } 
-                    }
-                    flag = true;
+                if(a[i + j] != b[j]) {
+                    flag = false;
+                    break;
                 }
+            }
+            if(flag) {
+                break;
             }
         }
         System.out.println(flag ? "Yes" : "No");
