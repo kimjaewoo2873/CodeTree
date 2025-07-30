@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class Main {
     public static void fun(int a[], int b[]) {
-        boolean flag = true;
+        boolean flag = false;
         for(int i=0;i<=a.length - b.length;i++) {
             flag = true;
             for(int j=0;j<b.length;j++) {
