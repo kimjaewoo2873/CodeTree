@@ -7,13 +7,11 @@ public class Main {
                 if(a[i] == b[j]) {
                     int eq = i;
                     for(int k=j + 1; k<b.length; k++) {
-                        if(a[++i] != b[k]) {
+                        if(a[++eq] != b[k]) {
                             break;
                         } 
-                        else {
-                            flag = true;
-                        }
                     }
+                    flag = true;
                 }
             }
         }
