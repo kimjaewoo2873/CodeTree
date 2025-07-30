@@ -3,7 +3,7 @@ public class Main {
     public static String findDay(int m, int d) {
         int year[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
         if(m >= 1 && m <= 12) {
-            if(year[m + 1] >= d) { 
+            if(year[m - 1] >= d) { 
                 return "Yes";
             } else {
                 return "No";
