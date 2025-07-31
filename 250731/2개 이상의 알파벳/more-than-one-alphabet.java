@@ -1,18 +1,18 @@
 import java.util.Scanner;
+import java.util.HashSet;
+
 public class Main {
     public static String fun(String A) {
-        int cnt = 0;
-        for(int i=0; i<A.length() - 1; i++) {
-            char c1 = A.charAt(i);
-            char c2 = A.charAt(i + 1);
-            if(c1 != c2) {
-                cnt++;
-            }
-            if(cnt >= 2) {
+        HashSet<Character> hash = new HashSet<>();
+    
+        for(int i=0; i<A.length(); i++) {
+            hash.add(A.charAt(i));
+            if(hash.size() >= 2) {
                 break;
-            } 
+            }
         }
-        return cnt >= 2 ? "Yes" : "No";
+        
+        return hash.size() >= 2 ? "Yes" : "No";
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
