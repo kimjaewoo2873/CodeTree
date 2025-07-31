@@ -30,7 +30,9 @@ public class Main {
         IntWrapper bw = new IntWrapper(b);
 
         fun(aw, bw);
+        a = aw.getValue();
+        b = bw.getValue();
 
-        System.out.println(aw.getValue() + " " + bw.getValue());
+        System.out.println(a + " " + b);
     }
 }
