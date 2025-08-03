@@ -3,6 +3,7 @@ public class Main {
     public static void function(int n, int m, int arr[]) {
         int sum = 0;
         while(true) {
+            sum += arr[m];
             if(m == 1) {
                 break;
             }
@@ -11,7 +12,6 @@ public class Main {
             }  else {
                 m /= 2;
             }
-            sum += arr[m];
         }
         System.out.println(sum);
     }
