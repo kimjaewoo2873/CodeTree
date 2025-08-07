@@ -9,11 +9,10 @@ public class Main {
                     flag = true; 
                 }
             }
+            if(!flag) 
+                return false;
         }
-        if(flag)
-            return true;
-        else 
-            return false;
+        return true;
     } 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
