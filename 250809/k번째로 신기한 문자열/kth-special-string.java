@@ -8,10 +8,8 @@ public class Main {
         ArrayList<String> result = new ArrayList<>();
         ArrayList<String> rest = new ArrayList<>();
         for(int i=0;i<words.length;i++) {
-            if(words[i].indexOf(t) != -1) {
+            if(words[i].startsWith(t)) {
                 result.add(words[i]);
-            } else {
-                rest.add(words[i]);
             }
         }
         
