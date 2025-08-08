@@ -16,9 +16,7 @@ public class Main {
         }
         
         Collections.sort(result);
-        Collections.sort(rest);
-
-        result.addAll(rest);
+       
 
         System.out.println(result.get(k - 1));
         
