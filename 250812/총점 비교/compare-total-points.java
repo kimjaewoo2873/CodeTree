@@ -31,25 +31,22 @@ class Student implements Comparable<Student>{
     }
     @Override
     public int compareTo(Student student) {
-        if(this.sum != student.getSum()) 
-            return this.sum - student.getSum();
+        return this.sum - student.getSum();
     }
 }
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
+        Student students[] = new Student[n];
         for (int i = 0; i < n; i++) {
             String name = sc.next();
             int score1 = sc.nextInt();
             int score2 = sc.nextInt();
             int score3 = sc.nextInt();
-        }
-        // Please write your code here.
-        Student students[] = new Student[n];
-        for(int i=0;i<n;i++){
             students[i] = new Student(name, score1, score2, score3);
         }
+        // Please write your code here.
         Arrays.sort(students);
 
         for(int i=0;i<n;i++){
