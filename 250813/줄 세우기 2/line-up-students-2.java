@@ -37,7 +37,7 @@ public class Main {
                 if(a.getHeight() != b.getHeight()) {
                     return a.getHeight() - b.getHeight();
                 } else {
-                    return a.getWeight() - b.getHeight();
+                    return b.getWeight() - a.getWeight();
                 }
             }
         });
