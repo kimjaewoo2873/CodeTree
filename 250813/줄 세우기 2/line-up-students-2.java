@@ -29,7 +29,7 @@ public class Main {
         for (int i = 0; i < n; i++) {
             int height = sc.nextInt();
             int weight = sc.nextInt();
-            students[i] = new Students((i+1), height, weight);
+            students[i] = new Student((i+1), height, weight);
         }
         Arrays.sort(students, new Comparator<Student>() {
             @Override
@@ -37,7 +37,7 @@ public class Main {
                 if(a.getHeight() != b.getHeight()) {
                     return a.getHeight() - b.getHeight();
                 } else {
-                    return b.getWeight() - a.getHeight();
+                    return a.getWeight() - b.getHeight();
                 }
             }
         });
