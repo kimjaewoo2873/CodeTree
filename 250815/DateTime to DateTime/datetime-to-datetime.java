@@ -31,7 +31,12 @@ public class Main {
         int B = sc.nextInt();
         int C = sc.nextInt();
         // Please write your code here.
-        Date date = new Date(A, B, C);
-        System.out.println(fun(date));    
+        if(A < 11){
+            System.out.println("-1");
+            return;
+        } else {
+            Date date = new Date(A, B, C);
+            System.out.println(fun(date));    
+        }
     }
 }
