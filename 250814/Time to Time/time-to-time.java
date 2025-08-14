@@ -17,8 +17,8 @@ class Time {
 }
 public class Main {
     public static int operation(Time a, Time b) {
-        int hourValue = (Math.abs(b.getHour() - a.getHour())) * 60;
-        int minuteValue = Math.abs(b.getMinute() - a.getMinute());
+        int hourValue = (b.getHour() - a.getHour()) * 60;
+        int minuteValue = b.getMinute() - a.getMinute();
 
         return hourValue + minuteValue;
     }
