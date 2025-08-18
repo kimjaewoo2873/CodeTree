@@ -4,7 +4,11 @@ import java.util.ArrayList;
 public class Main {
     public static void findBinary(int n) {
         ArrayList<Integer> list = new ArrayList<>();
-    
+        if (n == 0) {
+            System.out.print(0);
+            return;
+        }   
+
         while (n > 0) { 
             list.add(n % 2);
             n /= 2;
