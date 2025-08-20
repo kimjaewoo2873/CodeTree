@@ -8,8 +8,10 @@ public class Main {
         for(int i=0;i<times.length;i++) {
             int start = times[i][0];
             int end = times[i][1];
-            line[start] += 1;
-            line[end] += 1;
+            
+            for(int j=start - 1; j<end; j++) {
+                line[j] += 1; 
+            }
         }
 
         int max = line[0];
