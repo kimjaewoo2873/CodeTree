@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class Main {
-    public static int operation(int n, int start[] ,int end) {
+    public static int operation(int n, int start[] ,int end[]) {
         int arr[] = new int[101];
         for(int i=0;i<arr.length;i++) {
             arr[i] = 0;
