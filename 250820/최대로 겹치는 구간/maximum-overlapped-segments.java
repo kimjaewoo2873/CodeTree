@@ -9,17 +9,13 @@ public class Main {
         }
         
         for(int i = 0; i < n ; i++) {
-            int start = Math.abs(x1[i]);
-            int end = Math.abs(x2[i]);
+            int start = x1[i] + 100;
+            int end = x2[i] + 100;
             
             for(int j = start; j < end ; j++) {
                 arr[j] += 1;
-                if(arr[j] == 1) 
-                    max = 1;
-                else if(arr[j] == 2) 
-                    max = 2;
-                else if(arr[j] == 3)
-                    max = 3;
+                if(arr[j] > max) 
+                    max = arr[j];
             }
         }
 
