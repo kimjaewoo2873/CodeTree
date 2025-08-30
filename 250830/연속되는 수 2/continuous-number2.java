@@ -9,10 +9,15 @@ public class Main {
             arr[i] = sc.nextInt();
         }
         int cnt = 0;
+        int max = cnt;
         for(int i=0;i<n;i++) {
-            if(i == 0 || arr[i] != arr[i - 1])
+            if(i == 0 || arr[i] != arr[i - 1]) {
                 cnt++;
+                if(max < cnt) {
+                    max = cnt;
+                }
+            }
         }
-        System.out.println(cnt);    
+        System.out.println(max);    
     }
 }
