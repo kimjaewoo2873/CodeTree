@@ -1,6 +1,6 @@
 const fs = require("fs");
 let input = fs.readFileSync(0).toString();
-let arr = a.split(" ");
+let arr = input.split(" ");
 
 let a = Number(arr[0]);
 let b = Number(arr[1]);
