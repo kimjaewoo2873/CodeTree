@@ -6,5 +6,5 @@ let a =Number(input[1]);
 let b = Number(input[2]);
 
 console.log(c);
-console.log(b.toFixed(2));
 console.log(a.toFixed(2));
+console.log(b.toFixed(2));
